@@ -8,14 +8,14 @@ const navMenu = document.getElementById('nav-menu'),
 /* Validate if constant exists */
 
 if(navToggle){
-    navToggle.addEventListener('click' , () => {
+    navToggle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
     })
 }
 
 /*======= Menu Show =======*/
 if(navClose){
-    navClose.addEventListener('click' , () =>{
+    navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
     })
 }
@@ -33,6 +33,14 @@ navLink.forEach(n => n.addEventListener('click' , linkAction))
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
+const scrollHeader = () => {
+const header = document.getElementById('header')
+// when the scroll is greater than 50 viewport height , add the scroll-header class to the header tag
+this.scrollY >= 50 ? header.classList.add('bg-header')
+                    : header.classList.remove('bg-header')
+}
+
+window.addEventListener('scroll' , scrollHeader)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
