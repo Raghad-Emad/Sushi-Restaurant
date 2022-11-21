@@ -319,7 +319,6 @@ img {
   transform: rotate(-15deg);
 }
 
-
 /*=============== BUTTON ===============*/
 
 .button{
@@ -394,8 +393,6 @@ img {
   justify-content: center;
   row-gap: 5.5rem;
 }
-
-
 
 .popular__card{
   position: relative;
